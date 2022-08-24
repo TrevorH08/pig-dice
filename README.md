@@ -29,5 +29,18 @@
 Describe: roll();
 
 Test: "Should roll random number between 1 - 6 
-Code: let randomRoll = Math.floor(Math.random() * 6) + 1;
+Code:
+ function roll() {
+  return Math.floor(Math.random() * 6) + 1;
+}
 Expected Output: Random Number between 1 - 6
+
+Describe: PlayerScore()
+
+Test: "Should create constructor object for player score"
+Code:
+PlayerScore(player1, player2) {
+  this.player1 = player1
+  this.player2 = player2
+}
+Expected Output: after defining new PlayerScore object, will house random number
