@@ -3,7 +3,7 @@
 - **What will happen when a user clicks "Play"?**
     - 1st roll?
 - **What objects will you need?**
-    - player 1, player 2
+    - player, game?
 - **What key-value pairs will each object need to contain in order for the game to work?**
     - Player name
     - current score
@@ -35,7 +35,7 @@ Code:
 }
 Expected Output: Random Number between 1 - 6
 
-Describe: PlayerScore()
+Describe: Player()
 
 Test: "Should create constructor object for player score"
 Code:
@@ -43,3 +43,8 @@ PlayerScore(score) {
   this.score = 0
 }
 Expected Output: after defining new PlayerScore object, will house numbers entered (0)
+
+Test: "Should create constructor function for Player object type. With name, current score 0"
+Code:
+let player1 = new Player('Sam', 0)
+Expected output: Player {name: 'Sam', score: '0'}
