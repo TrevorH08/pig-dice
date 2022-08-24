@@ -1,7 +1,7 @@
 // Business Logic ----------
 
 function PlayerScore(score) {
-  this.score = score
+  this.score = 0;
 }
 
 function roll() {
@@ -12,12 +12,10 @@ function roll() {
 
 function handleFormSubmission(event) {
   event.preventDefault();
-  let player1Score = 0;
-  let player2Score = 0;
-  player1Score += roll();
-  player2Score += roll();
-  let player1 = new PlayerScore(player1Score);
-  let player2 = new PlayerScore(player2Score);
+  player1.score += roll();
+  player2.score += roll();
+  let player1 = new PlayerScore(0);
+  let player2 = new PlayerScore(0);
 }
 
 window.addEventListener("load", function (){
