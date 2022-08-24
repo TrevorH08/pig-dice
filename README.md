@@ -39,8 +39,7 @@ Describe: PlayerScore()
 
 Test: "Should create constructor object for player score"
 Code:
-PlayerScore(player1, player2) {
-  this.player1 = player1
-  this.player2 = player2
+PlayerScore(score) {
+  this.score = score
 }
 Expected Output: after defining new PlayerScore object, will house numbers entered (0)
