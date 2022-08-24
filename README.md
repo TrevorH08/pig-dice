@@ -29,5 +29,5 @@
 Describe: roll();
 
 Test: "Should roll random number between 1 - 6 
-Code: Math.floor(Math.random() * 7) + 1;
+Code: let randomRoll = Math.floor(Math.random() * 6) + 1;
 Expected Output: Random Number between 1 - 6
