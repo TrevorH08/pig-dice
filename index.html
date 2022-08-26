@@ -12,16 +12,28 @@
     <h2>Pig Dice</h2>
     <br>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <h3>Player 1</h3>
         <h4>Score: <span id="points"></span></h4>
         <p>
-        <input type="button" value="Roll" class="btn btn-dark">
+        <input type="button" value="Roll" id="roll-button" class="btn btn-dark">
         <p>
       </div>
-      <div class="col-md-6">
+      <br>
+      <div class="col-md-12">
         <p>
-        <button type="button" class="btn btn-dark">Hold</button>
+        <button type="button" id="hold-button" class="btn btn-dark">Hold</button>
+        </p>
+      </div>
+      <br>
+      <div class="col-md-12">
+        <p>
+        <button type="button" id="reset-button" class="btn btn-dark">Reset</button>
+        </p>
+      </div>
+      <div class="col-md-12">
+        <p>
+          <button type="button" id="start-button" class="btn btn-dark">Start!</button>
         </p>
       </div>
     </div>
